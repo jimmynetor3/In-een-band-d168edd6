@@ -14,7 +14,7 @@ foreach ($albumoverzicht as $album => $prijs) {
 	$numSum += $prijs;
 };
 
-$numTotal = $numSum / $numCount;
+$numTotal = $numSum / count($albumoverzicht);
 
 echo "je totale prijs is ". array_sum($albumoverzicht) . PHP_EOL;
 echo "je gemildelde prijs is " . $numTotal; 
